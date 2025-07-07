@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add your GitHub repo link here](https://github.com/yourusername/your-repo-name)
-- Live Site URL: [Add your live site link here](https://yourusername.github.io/your-repo-name)
+- Solution URL: [https://github.com/Esabdul/single-price-grid-component]
+- Live Site URL: [https://esabdul.github.io/single-price-grid-component/]
 
 ---
 
