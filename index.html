@@ -17,8 +17,8 @@
     <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
   <body>
-    <main class="pricing-component">
-      <section class="pricing-component__intro">
+    <main class="pricing-component" role="main">
+      <section class="pricing-component__intro" area aria-labelledby="intro-title">
         <h1 class="pricing-component__title">Join our community</h1>
         <p class="pricing-component__intro-text">
           30-day, hassle-free money back <span class="break">guarantee</span>
@@ -30,44 +30,48 @@
         </p>
       </section>
 
-      <section class="pricing-component__pricing">
-        <h2 class="pricing-component__pricing--title">Monthly Subscription</h2>
-        <div class="pricing-component__pricing--price">
-          <span class="pricing-component__pricing--cost">&dollar;29 </span>
-          <span class="pricing-component__pricing--period">per month</span>
-        </div>
-        <p class="pricing-component__pricing--description">
-          Full access for less than &dollar;1 a day
-        </p>
-        <button class="button">Sign Up</button>
-      </section>
+      <div class="pricing-component__bottom">
+        <section class="pricing-component__pricing" area aria-labelledby="pricing-title">
+          <h2 class="pricing-component__pricing--title">
+            Monthly Subscription
+          </h2>
+          <div class="pricing-component__pricing--price">
+            <span class="pricing-component__pricing--cost">&dollar;29 </span>
+            <span class="pricing-component__pricing--period">per month</span>
+          </div>
+          <p class="pricing-component__pricing--description">
+            Full access for less than &dollar;1 a day
+          </p>
+          <button class="button">Sign Up</button>
+        </section>
 
-      <section class="pricing-component__features">
-        <h2>Why Us</h2>
-        <ul class="pricing-component__features--list">
-          <li class="pricing-component__features--list-item">
-            Tutorials by industry experts Peer.
-          </li>
-          <li class="pricing-component__features--list-item">
-            expert code review.
-          </li>
-          <li class="pricing-component__features--list-item">
-            Coding exercises.
-          </li>
-          <li class="pricing-component__features--list-item">
-            Access to our GitHub repos.
-          </li>
-          <li class="pricing-component__features--list-item">
-            Community forum.
-          </li>
-          <li class="pricing-component__features--list-item">
-            Flashcard decks.
-          </li>
-          <li class="pricing-component__features--list-item">
-            New videos every week.
-          </li>
-        </ul>
-      </section>
+        <section class="pricing-component__features" area aria-labelledby="why-us-title">
+          <h2 class="pricing-component__features--title">Why Us</h2>
+          <ul class="pricing-component__features--list">
+            <li class="pricing-component__features--list-item">
+              Tutorials by industry experts
+            </li>
+            <li class="pricing-component__features--list-item">
+              Peer &amp; expert code review
+            </li>
+            <li class="pricing-component__features--list-item">
+              Coding exercises
+            </li>
+            <li class="pricing-component__features--list-item">
+              Access to our GitHub repos
+            </li>
+            <li class="pricing-component__features--list-item">
+              Community forum
+            </li>
+            <li class="pricing-component__features--list-item">
+              Flashcard decks
+            </li>
+            <li class="pricing-component__features--list-item">
+              New videos every week
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
   </body>
 </html>

@@ -80,12 +80,14 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 2rem;
+  padding: clamp(1rem, 5vw, 2rem);
 }
 
 .pricing-component {
   width: 100%;
   max-width: 21.875rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+  margin: 2.5rem auto;
 }
 
 .pricing-component__intro {
@@ -96,7 +98,7 @@ body {
 }
 
 .pricing-component__title {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   font-weight: var(--font-weight-bold);
   color: var(--color-cyan-primary);
   padding-bottom: 0.6em;
@@ -122,17 +124,17 @@ body {
   background-color: var(--color-cyan-primary);
   color: white;
   padding-inline: 1.5em;
-  padding-block: 1.3em;
+  padding-block: 1.2em;
 }
 
 .pricing-component__pricing--title {
   font-size: 1.1rem;
   font-weight: var(--font-weight-bold);
-  padding-bottom: 0.2em;
+  padding-bottom: 1em;
 }
 
 .pricing-component__pricing--cost {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: var(--font-weight-bold);
 }
 
@@ -144,9 +146,9 @@ body {
 
 .pricing-component__pricing--description {
   color: var(--color-neutral-light-gray);
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   font-weight: var(--font-weight-normal);
-  padding-bottom: 1.5em;
+  padding-bottom: 1.8em;
 }
 
 .pricing-component__pricing--price {
@@ -164,4 +166,105 @@ body {
   border-radius: 5px;
   color: white;
   font-weight: var(--font-weight-bold);
+  box-shadow: 0px 7px 5px 3px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: hsl(71, 73%, 64%);
+  transform: scale(1) translateY(-3px);
+}
+
+.button:focus {
+  outline: 2px solid hsl(70, 73%, 64%);
+  outline-offset: 2px;
+}
+
+.pricing-component__features {
+  padding: 1.5em;
+  color: white;
+  background-color: rgba(74, 190, 189, 1);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pricing-component__features--title {
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-bold);
+  padding-bottom: 0.7em;
+}
+
+.pricing-component__features--list {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-component__features--list-item {
+  font-size: 0.875rem;
+  color: var(--color-neutral-light-gray);
+  font-weight: var(--font-weight-normal);
+}
+
+.pricing-component__features--list-item:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (min-width: 40rem) {
+  .pricing-component {
+    max-width: 40rem;
+    border-radius: 10px;
+  }
+
+  .pricing-component__intro {
+    padding: 2em;
+  }
+
+  .pricing-component__intro-text {
+    padding-bottom: 0.5em;
+  }
+
+  .pricing-component__intro-text .break {
+    display: inline-block;
+  }
+
+  .pricing-component__intro--description {
+    font-size: 1rem;
+  }
+
+  .pricing-component__bottom {
+    display: flex;
+  }
+
+  .pricing-component__pricing,
+  .pricing-component__features {
+    flex: 1 1 0;
+  }
+
+  .pricing-component__features,
+  .pricing-component__pricing {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+  }
+
+  .pricing-component__features {
+    border-bottom-right-radius: 5px;
+    padding-top: 1.9em;
+    padding-left: 2em;
+  }
+
+  .pricing-component__features--title {
+    font-size: 1.1rem;
+  }
+
+  .pricing-component__pricing {
+    border-bottom-left-radius: 5px;
+    padding-top: 2em;
+    padding-left: 2.5em;
+  }
+
+  .button {
+    width: 91%;
+  }
 }
